@@ -1,0 +1,7 @@
+@font-face {
+  font-family: Euclid;
+  src: url("./../public/fonts/Euclid\ Circular\ A\ Bold.ttf");
+}
+p{
+  font-family: Euclid;
+}

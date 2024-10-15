@@ -1,0 +1,58 @@
+:root {
+  --color-orange:#ED9121;
+  --color-white:#FFFFFF;
+  --color-gray:#ECECEC;
+  --color-black:#000000;
+}
+
+.button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+  border-radius: 100px;
+  transition: 0.5s ease;
+}
+.button .button_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn1 {
+  background: var(--color-orange);
+  color: var(--color-white);
+}
+.btn1:hover {
+  background: var(--color-white);
+  color: var(--color-orange);
+  border: 1px solid var(--color-orange);
+}
+.btn1:hover img {
+  background-color: var(--color-orange);
+}
+
+.btn2 {
+  background: var(--color-white);
+  color: var(--color-orange);
+  border: 1px solid var(--color-orange);
+}
+.btn2 img {
+  background-color: var(--color-white);
+}
+.btn2:hover {
+  background: var(--color-orange);
+  color: var(--color-white);
+}
+.btn2:hover img {
+  background-color: var(--color-white);
+}
+
+.btn3 {
+  background: var(--color-gray);
+}
+.btn3:hover {
+  background: var(--color-orange);
+}/*# sourceMappingURL=classButton.module.css.map */

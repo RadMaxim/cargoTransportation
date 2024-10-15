@@ -1,0 +1,71 @@
+@mixin posElem($gap){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: $gap;
+}
+:root{
+    --color-orange:#ED9121;
+    --color-white:#FFFFFF;
+    --color-gray:#ECECEC;
+    --color-black:#000000;
+}
+
+.button{
+    cursor: pointer;
+    @include posElem(0);
+    border-radius: 100px;
+    transition: 0.5s ease;
+    .button_container{
+        @include posElem(10px);
+    }
+   
+
+}
+.btn1{
+    background: var(--color-orange);
+    color: var(--color-white);
+
+    &:hover{
+        background: var(--color-white);
+        color: var(--color-orange);
+        border: 1px solid var(--color-orange);
+        img{
+            background-color: var(--color-orange);
+          
+        }
+
+
+    }
+}
+.btn2{
+    background: var(--color-white);
+    color: var(--color-orange);
+    border: 1px solid var(--color-orange);
+   
+    img{
+       
+        background-color: var(--color-white);
+    }
+    &:hover{
+        background: var(--color-orange);
+        color: var(--color-white);
+        img{
+            background-color: var(--color-white);
+        }
+        
+
+
+    }
+}
+.btn3{
+    background: var(--color-gray);
+    
+    
+    &:hover{
+        background: var(--color-orange);
+       
+        
+    }
+
+}
