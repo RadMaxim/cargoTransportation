@@ -1,0 +1,12 @@
+@function getW(){
+    @return calc(100vw - 32px);
+}
+.section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-backGround3);
+        .section_container{
+            width: getW();
+    
+}}

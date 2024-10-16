@@ -1,0 +1,9 @@
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-backGround1);
+}
+.section .section_container {
+  width: calc(100vw - 32px);
+}/*# sourceMappingURL=classSection1.module.css.map */
