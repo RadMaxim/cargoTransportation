@@ -17,6 +17,9 @@
   }
 }
 form {
+  button{
+    width: 100% !important;
+  }
   height: 670px;
   display: grid;
   grid-template-columns: 100%;
