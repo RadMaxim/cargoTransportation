@@ -1,10 +1,10 @@
-:root{
-  --color-orange:#ED9121;
-  --color-white:#FFFFFF;
-  --color-gray:#ECECEC;
-  --color-black:#000000;
-  --color-grayLight:#E5E5E5;
-  --color-backGround1:#2F2F2F;
-  --color-backGround2:#F4F4F4;
-  --color-backGround3:#212121;
+:root {
+  --color-orange: #ed9121;
+  --color-white: #ffffff;
+  --color-gray: #ececec;
+  --color-black: #000000;
+  --color-grayLight: #e5e5e5;
+  --color-backGround1: #2f2f2f;
+  --color-backGround2: #f4f4f4;
+  --color-backGround3: #212121;
 }

@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .section {
   display: flex;
   justify-content: center;
@@ -6,4 +12,169 @@
 }
 .section .section_container {
   width: calc(100vw - 32px);
+}
+
+form {
+  height: 670px;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px 100px 100px 70px 70px 70px 60px 60px;
+  grid-template-areas: "section1" "section2" "section3" "section4" "section5" "section6" "section7" "section8";
+  row-gap: 10px;
+  align-items: center;
+}
+form section:nth-of-type(1) {
+  grid-area: section1;
+  background-color: var(--color-backGround2);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 20px;
+}
+form section:nth-of-type(2) {
+  grid-area: section2;
+  background-color: var(--color-backGround2);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 20px;
+}
+form section:nth-of-type(3) {
+  grid-area: section3;
+  background-color: var(--color-backGround2);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 20px;
+}
+form section:nth-of-type(4) {
+  grid-area: section4;
+  background-color: var(--color-backGround2);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 20px;
+}
+form section:nth-of-type(5) {
+  grid-area: section5;
+  background-color: var(--color-backGround2);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 20px;
+}
+form section:nth-of-type(6) {
+  grid-area: section6;
+  background-color: var(--color-backGround2);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 20px;
+}
+form section:nth-of-type(7) {
+  grid-area: section7;
+  background-color: var(--color-backGround2);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 29px;
+}
+form section:nth-of-type(8) {
+  grid-area: section8;
+  background-color: var(--color-backGround2);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 29px;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.allServices,
+.allTypeJob {
+  top: 100%;
+  left: 0%;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: top 0.2s ease-in-out;
+}
+
+input[name=openOrClose]:checked ~ .allServices,
+input[id=openWorker]:checked ~ .allTypeJob {
+  top: 0;
+  z-index: 10;
+}
+
+.phone div, .names div {
+  width: 100%;
+  height: 90%;
+}
+.phone div input, .names div input {
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  background-color: var(--color-backGround2);
+}
+
+.cars div {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.cars div button {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  transform: translate(0%, -50%);
+  pointer-events: none;
+}
+.cars div select {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  border: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: var(--color-backGround2);
+}
+.cars div select:focus option {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: red;
 }/*# sourceMappingURL=classSection3.module.css.map */

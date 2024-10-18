@@ -1,5 +1,3 @@
-
-
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
 // import {
@@ -15,18 +13,16 @@ export const api = createApi({
   baseQuery: fetchBaseQuery({
     baseUrl: URL_API,
   }),
-  endpoints: (builder) => ({
+  endpoints: () => ({
     // getDataAboutOurCards: builder.query<ElementsResponse, number>({
     //   query: (page) => `people?page=${page}`,
     // }),
     // getFilterDataAboutOurCards: builder.query<ElementsResponse, typeData>({
     //   query: ({ search, page }: typeData) => {
     //     let url = `people/?page=${page}`;
-
     //     if (search) {
     //       url += `&search=${search}`;
     //     }
-
     //     return url;
     //   },
     //   providesTags: (result, _, { search, page }) => {

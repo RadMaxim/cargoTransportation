@@ -2,26 +2,20 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../src/App";
 import MainPage from "../src/components/Button/MainPage/MainPage";
 
-
 const routers = [
   {
-    element: (<MainPage/>
-    ),
+    element: <MainPage />,
     path: "/",
     errorElement: "",
   },
   {
     path: "/blogpage/:page?",
-    element: (
-      ""
-    ),
+    element: "",
     errorElement: "",
   },
   {
     path: "/Example",
-    element: (
-  <App/>
-    ),
+    element: <App />,
     errorElement: "",
   },
 ];

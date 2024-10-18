@@ -1,1 +1,1 @@
-{"version":3,"sources":["classSection2.module.scss","classSection2.module.css"],"names":[],"mappings":"AAGA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,oCAAA;ACFJ;ADGQ;EACI,yBAAA;ACDZ","file":"classSection2.module.css"}
+{"version":3,"sources":["classSection2.module.scss","classSection2.module.css"],"names":[],"mappings":"AAGA;EACE,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,oCAAA;ACFF;ADGE;EACE,yBAAA;ACDJ","file":"classSection2.module.css"}

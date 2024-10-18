@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "format:fix": "prettier --write .",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
@@ -11,9 +12,11 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.3.0",
+    "prettier": "^3.3.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-router-dom": "^6.27.0"
+    "react-router-dom": "^6.27.0",
+    "react-select": "^5.8.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.11.1",

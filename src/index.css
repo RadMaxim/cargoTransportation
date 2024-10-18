@@ -2,6 +2,13 @@
   font-family: Euclid;
   src: url("./../public/fonts/Euclid\ Circular\ A\ Bold.ttf");
 }
-p{
+p {
   font-family: Euclid;
+}
+:root {
+  --color-orange: #ed9121;
+  --color-white: #ffffff;
+  --color-gray: #ececec;
+  --color-black: #000000;
+  --color-grayLight: #e5e5e5;
 }
