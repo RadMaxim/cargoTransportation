@@ -8,42 +8,42 @@ function App() {
         type="button"
         isIcon="calculate"
         text="Рассчитать стоимость"
-        h={63}
-        w={343}
+        h={"63px"}
+        w={"343px"}
         color={"btn1"}
       />
-      <Button type="button" text="Заказать" h={50} w={99} color={"btn1"} />
-      <Button type="button" text="Заказать" h={50} w={99} color={"btn1"} />
-      <Button type="button" text="Показать все" h={50} w={343} color={"btn2"} />
+      <Button type="button" text="Заказать" h={"50px"} w={"99px"} color={"btn1"} />
+      <Button type="button" text="Заказать" h={"50px"} w={"99px"} color={"btn1"} />
+      <Button type="button" text="Показать все" h={"50px"} w={"343px"} color={"btn2"} />
       <Button
         type="button"
         isIcon="calculate"
         text="Рассчитать стоимость"
-        h={60}
-        w={343}
+        h={"60px"}
+        w={"343px"}
         color={"btn1"}
       />
       <Button
         type="button"
         isIcon="phone"
         text="Перезвоните мне"
-        h={60}
-        w={343}
+        h={"60px"}
+        w={"343px"}
         color={"btn1"}
       />
-      <Button type="button" isIcon="plus" h={33} w={33} color={"btn3"} />
-      <Button type="button" isIcon="minus" h={33} w={33} color={"btn3"} />
-      <Button type="button" isIcon="galya" h={33} w={33} color={"btn3"} />
-      <Button type="button" isIcon="pagL" h={44} w={44} color={"btn4"} />
-      <Button type="button" isIcon="pagR" h={44} w={44} color={"btn4"} />
-      <Button type="button" isIcon="pagRLight" h={44} w={44} color={"btn5"} />
-      <Button type="button" isIcon="pagRRight" h={44} w={44} color={"btn5"} />
+      <Button type="button" isIcon="plus" h={"33px"} w={"33px"} color={"btn3"} />
+      <Button type="button" isIcon="minus" h={"33px"} w={"33px"} color={"btn3"} />
+      <Button type="button" isIcon="galya" h={"33px"} w={"33px"} color={"btn3"} />
+      <Button type="button" isIcon="pagL" h={"44px"} w={"44px"} color={"btn4"} />
+      <Button type="button" isIcon="pagR" h={"44px"} w={"44px"} color={"btn4"} />
+      <Button type="button" isIcon="pagRLight" h={"44px"} w={"44px"} color={"btn5"} />
+      <Button type="button" isIcon="pagRRight" h={"44px"} w={"44px"} color={"btn5"} />
       <Button
         type="button"
         isIcon="calculate"
         text="Заказать консультацию"
-        h={50}
-        w={344}
+        h={"50px"}
+        w={"344px"}
         color={"btn1"}
       />
     </>

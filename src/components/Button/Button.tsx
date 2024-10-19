@@ -14,8 +14,8 @@ import { memo } from "react";
 export interface Button {
   color: string;
   isIcon?: string;
-  w: number;
-  h: number;
+  w: string;
+  h: string;
   text?: string;
   type: "button" | "submit";
 }

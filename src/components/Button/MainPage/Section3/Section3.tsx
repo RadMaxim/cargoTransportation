@@ -23,11 +23,15 @@ const Section3 = () => {
                 type="number"
                 id="tentacles"
                 name="tentacles"
-                min="10"
-                max="100"
+                
               />
+     <Button type="button" isIcon="plus" h={"33px"} w={"33px"} color={"btn3"} />
+      <Button type="button" isIcon="minus" h={"33px"} w={"33px"} color={"btn3"} />
+      
             </div>
+            
           </section>
+          
           <section className={classSection3.date}>
             <div>
               <p>Дата/время</p>
@@ -79,7 +83,7 @@ const Section3 = () => {
                 })}
 
               </select>
-              <Button type="button" isIcon="galya" h={33} w={33} color={"btn3"} />
+              <Button type="button" isIcon="galya" h={"33px"} w={"33px"} color={"btn3"} />
 
             </div>
           </section>
@@ -98,8 +102,8 @@ const Section3 = () => {
             type="button"
             isIcon="calculate"
             text="Рассчитать стоимость"
-            h={60}
-            w={343}
+            h={"60px"}
+            w={"343px"}
             color={"btn1"}
           />
         </form>
