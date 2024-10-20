@@ -1,23 +1,20 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
 @function getW() {
   @return calc(100vw - 32px);
 }
-.section {
+@mixin posElem() {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.section {
+  @include posElem();
   background: var(--color-backGround3);
   .section_container {
     width: getW();
   }
 }
 form {
-  button{
+  button {
     width: 100%;
   }
   height: 670px;
@@ -42,6 +39,7 @@ form {
       display: flex;
       justify-content: space-between;
       align-items: center;
+
       padding: 0 20px;
       @if ($i<7) {
         border-radius: 20px;
@@ -64,9 +62,7 @@ input[type="radio"] {
   height: 100vh;
   position: fixed;
   background-color: var(--color-white);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include posElem();
   transition: top 0.2s ease-in-out;
 }
 input[name="openOrClose"]:checked ~ .allServices,
@@ -74,34 +70,35 @@ input[id="openWorker"]:checked ~ .allTypeJob {
   top: 0;
   z-index: 10;
 }
-.phone,.names{
-  div{
-  width: 100%;
-  height: 90%;
-input{
-  width: 100%;
-  height: 100%;
-  outline: none;
-  border: none;
-  font-size: 20px;
-  background-color: var(--color-backGround2);
-
-}}
+.phone,
+.names {
+  div {
+    width: 100%;
+    height: 90%;
+    input {
+      width: 100%;
+      height: 100%;
+      outline: none;
+      border: none;
+      font-size: 20px;
+      background-color: var(--color-backGround2);
+    }
+  }
 }
-.cars{
-  div{
+.cars {
+  div {
     width: 100%;
     height: 100%;
     position: relative;
-    button{
+    button {
       position: absolute;
       right: 0px;
       top: 50%;
-      transform: translate(0%,-50%);
+      transform: translate(0%, -50%);
       pointer-events: none;
     }
-    
-    select{
+
+    select {
       position: relative;
       width: 100%;
       height: 100%;
@@ -109,71 +106,47 @@ input{
       border: none;
       appearance: none;
       background-color: var(--color-backGround2);
-      &:focus option{
+      &:focus option {
         position: absolute;
         top: 100%;
         left: 0;
-        background-color: red;
       }
     }
   }
 }
-.movers{
-  display: block !important;
-
-  button:nth-of-type(1){
-    position: absolute;
-    right: 0%;
-    top: 10px;
-    pointer-events: none;
-
+.buttons {
+  @include posElem();
+  flex-direction: column;
+  row-gap: 5px;
+}
+.counter {
+  @include posElem();
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: start;
+}
+.img1 {
+  @include posElem();
+  column-gap: 11px;
+  p {
+    font-size: 1rem;
   }
-  button:nth-of-type(2){
-    position: absolute;
-    right: 0%;
-    bottom: 10px;
-    pointer-events: none;
-
-  }
-  div:nth-child(1){
-    position: absolute;
-   
-    
-  }
-  div:nth-child(2){
-    height: 100%;
+}
+.date {
+  div {
     position: relative;
-    
-  
+    @include posElem();
+    flex-direction: column;
+    p {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    width: 100%;
+    height: 100%;
+    input {
+      // width: 100%;
+      // height: 100%;
+    }
   }
-
-}
-input[type="number"]{
-  height: 100%;
-  outline: none;
-  border: none;
-  appearance: none;
-  width: 100%;
-  caret-color: transparent;
-  user-select: none;
-  
-}
-/* Для Chrome и Safari */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  appearance: none;
-  // margin: 0;
-}
-
-
-
-input[type="number"]::-ms-clear {
-  display: none;
-}
-input[type="number"]::-webkit-inner-spin-button{
-  position: absolute;
-  right: 0px;
-  top: 0;
-  height: 100%;
-  width: 33px;
 }

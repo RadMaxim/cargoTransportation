@@ -1,7 +1,16 @@
+import { useState } from "react";
 import Button from "../../Button";
 import classSection3 from "./css/classSection3.module.css";
+import movers from "./../../../../../public/icons/formsIcons/movers.svg";
 
 const Section3 = () => {
+  const [count, setCount] = useState(0);
+  const changeCount = (delta: number) => {
+    if (count + delta > 11 || count + delta < 0) {
+      return;
+    }
+    setCount((count) => count + delta);
+  };
   const allAuto = [
     { value: "BMV" },
     { value: "BMV" },
@@ -14,28 +23,49 @@ const Section3 = () => {
       <div className={classSection3.section_container}>
         <form>
           <section className={classSection3.movers}>
-            <div>
-              <p>Грузчики</p>
+            <div className={classSection3.counter}>
+              <div>
+                <p>Грузчики</p>
+              </div>
+              <div className={classSection3.img1}>
+                <img src={movers} alt="" /> <p>{count}</p>
+              </div>
             </div>
-            <div>
-              <label htmlFor="tentacles"></label>
-              <input
-                type="number"
-                id="tentacles"
-                name="tentacles"
-                
-              />
-     <Button type="button" isIcon="plus" h={"33px"} w={"33px"} color={"btn3"} />
-      <Button type="button" isIcon="minus" h={"33px"} w={"33px"} color={"btn3"} />
-      
+            <div className={classSection3.buttons}>
+              <div onClick={() => changeCount(1)}>
+                <Button
+                  type="button"
+                  isIcon="plus"
+                  h={"33px"}
+                  w={"33px"}
+                  color={"btn3"}
+                />
+              </div>
+              <div onClick={() => changeCount(-1)}>
+                <Button
+                  type="button"
+                  isIcon="minus"
+                  h={"33px"}
+                  w={"33px"}
+                  color={"btn3"}
+                />
+              </div>
             </div>
-            
           </section>
-          
+
           <section className={classSection3.date}>
             <div>
               <p>Дата/время</p>
-              <input type="date" />
+              {/* <input type="date" name="" id="" /> */}
+
+              {/* <DatePicker
+                selected={startDate}
+                locale="pt-BR"
+                showTimeSelect
+                timeFormat="p"
+                timeIntervals={15}
+                dateFormat="Pp"
+              /> */}
             </div>
           </section>
           <section className={classSection3.times}>
@@ -43,7 +73,6 @@ const Section3 = () => {
               <p>Кол-во часов</p>
             </div>
             <div>
-              {" "}
               <input type="number" />
             </div>
           </section>
@@ -69,7 +98,6 @@ const Section3 = () => {
                 <input type="radio" name="openOrCloseWorker" id="closeWorker" />
               </section>
             </div>
-           
           </section>
           <section className={classSection3.cars}>
             <div>
@@ -81,10 +109,14 @@ const Section3 = () => {
                     </option>
                   );
                 })}
-
               </select>
-              <Button type="button" isIcon="galya" h={"33px"} w={"33px"} color={"btn3"} />
-
+              <Button
+                type="button"
+                isIcon="galya"
+                h={"33px"}
+                w={"33px"}
+                color={"btn3"}
+              />
             </div>
           </section>
 
