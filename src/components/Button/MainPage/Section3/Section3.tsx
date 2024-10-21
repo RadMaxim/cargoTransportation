@@ -1,15 +1,29 @@
 import { useState } from "react";
 import Button from "../../Button";
 import classSection3 from "./css/classSection3.module.css";
-import movers from "./../../../../../public/icons/formsIcons/movers.svg";
-
+import moversIMG from "./../../../../../public/icons/formsIcons/movers.svg";
+import hourImg from "./../../../../../public/icons/formsIcons/Hour.svg"
+import rectangles from "./../../../../../public/icons/formsIcons/rectangles.svg"
+export interface Form{
+  movers:number,
+  hour:number
+}
 const Section3 = () => {
-  const [count, setCount] = useState(0);
-  const changeCount = (delta: number) => {
-    if (count + delta > 11 || count + delta < 0) {
+  const [count, setCount] = useState<Form>({movers:0,hour:0});
+  const {movers,hour} = count
+  const changeMovers = (delta: number) => {
+    if (movers + delta > 11 || movers + delta < 0) {
       return;
     }
-    setCount((count) => count + delta);
+    setCount(()=>({...count,movers:movers+delta}));
+  
+  };
+  const changeHour = (delta: number) => {
+    if (movers + delta > 11 || movers + delta < 0) {
+      return;
+    }
+    setCount(()=>({...count,hour:hour+delta}));
+  
   };
   const allAuto = [
     { value: "BMV" },
@@ -28,11 +42,11 @@ const Section3 = () => {
                 <p>Грузчики</p>
               </div>
               <div className={classSection3.img1}>
-                <img src={movers} alt="" /> <p>{count}</p>
+                <img src={moversIMG} alt="" /> <p>{movers}</p>
               </div>
             </div>
             <div className={classSection3.buttons}>
-              <div onClick={() => changeCount(1)}>
+              <div onClick={() => changeMovers(1)}>
                 <Button
                   type="button"
                   isIcon="plus"
@@ -41,7 +55,7 @@ const Section3 = () => {
                   color={"btn3"}
                 />
               </div>
-              <div onClick={() => changeCount(-1)}>
+              <div onClick={() => changeMovers(-1)}>
                 <Button
                   type="button"
                   isIcon="minus"
@@ -69,15 +83,40 @@ const Section3 = () => {
             </div>
           </section>
           <section className={classSection3.times}>
-            <div>
-              <p>Кол-во часов</p>
+          
+            <div className={classSection3.counter}>
+              <div>
+                <p>Кол-во часов</p>
+              </div>
+              <div className={classSection3.img1}>
+                <img src={hourImg} alt="" /> <p>{hour}</p>
+              </div>
             </div>
-            <div>
-              <input type="number" />
+            <div className={classSection3.buttons}>
+              <div onClick={() => changeHour(1)}>
+                <Button
+                  type="button"
+                  isIcon="plus"
+                  h={"33px"}
+                  w={"33px"}
+                  color={"btn3"}
+                />
+              </div>
+              <div onClick={() => changeHour(-1)}>
+                <Button
+                  type="button"
+                  isIcon="minus"
+                  h={"33px"}
+                  w={"33px"}
+                  color={"btn3"}
+                />
+              </div>
             </div>
+       
           </section>
           <section className={classSection3.service}>
             <div>
+              <img src={rectangles} alt="" />
               <label htmlFor="open">Дополнительные услуги</label>
               <input type="radio" name="openOrClose" id="open" />
               <section className={classSection3.allServices}>
@@ -90,6 +129,7 @@ const Section3 = () => {
           </section>
           <section className={classSection3.typeWork}>
             <div>
+              <img src={moversIMG} alt="" />
               <label htmlFor="openWorker">Тип работ</label>
               <input type="radio" name="openOrCloseWorker" id="openWorker" />
               <section className={classSection3.allTypeJob}>
