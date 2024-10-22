@@ -150,14 +150,14 @@ input[id="openWorker"]:checked ~ .allTypeJob {
     }
   }
 }
-.service{
-  div{
+.service {
+  div {
     @include posElem();
     column-gap: 11px;
   }
 }
-.typeWork{
-  div{
+.typeWork {
+  div {
     @include posElem();
     column-gap: 11px;
   }
