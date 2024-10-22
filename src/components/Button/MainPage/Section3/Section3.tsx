@@ -4,24 +4,13 @@ import classSection3 from "./css/classSection3.module.css";
 import moversIMG from "./../../../../../public/icons/formsIcons/movers.svg";
 import hourImg from "./../../../../../public/icons/formsIcons/Hour.svg";
 import rectangles from "./../../../../../public/icons/formsIcons/rectangles.svg";
-import { DifInput, Form } from "./../../../../../AllInterface/Interface";
-export interface DiffLabel {
-  textLabel?: string;
-  id: string;
-  name: string;
-}
-const DifferentInputs = ({ pl, type }: DifInput) => (
-  <div>
-    <input type={type} placeholder={pl} />
-  </div>
-);
-const DiffLabelRadio = ({ textLabel, id, name }: DiffLabel) => (
-  <>
-    <label htmlFor={id}>{textLabel}</label>
-    <input type="radio" name={name} id={id} />
-  </>
-);
+import DifferentInputs from "./components/DifferentInputs";
+import DiffLabelRadio from "./components/DiffLabelRadio";
+import { allAuto } from "./components/auto";
+import { Form } from "../../../../../AllInterface/Interface";
+
 const Section3 = () => {
+
   const [count, setCount] = useState<Form>({ movers: 0, hour: 0 });
   const { movers, hour } = count;
   const changeMovers = (delta: number) => {
@@ -36,12 +25,7 @@ const Section3 = () => {
     }
     setCount(() => ({ ...count, hour: hour + delta }));
   };
-  const allAuto = [
-    { value: "BMV" },
-    { value: "BMV" },
-    { value: "BMV" },
-    { value: "BMV" },
-  ];
+ 
 
   return (
     <section className={classSection3.section}>
@@ -53,7 +37,8 @@ const Section3 = () => {
                 <p>Грузчики</p>
               </div>
               <div className={classSection3.img1}>
-                <img src={moversIMG} alt="" /> <p>{movers}</p>
+                <img src={moversIMG} alt="" /> <p>
+                  {movers}</p>
               </div>
             </div>
             <div className={classSection3.buttons}>
@@ -77,7 +62,6 @@ const Section3 = () => {
               </div>
             </div>
           </section>
-
           <section className={classSection3.date}>
             <div>
               <p>Дата/время</p>

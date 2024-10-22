@@ -18,3 +18,8 @@ export interface DifInput {
   type?: string;
   pl?: string;
 }
+export interface DiffLabel {
+  textLabel?: string;
+  id: string;
+  name: string;
+}
