@@ -9,16 +9,13 @@ import DiffLabelRadio from "./components/DiffLabelRadio";
 import { allAuto } from "./components/auto";
 import { Form } from "../../../../../AllInterface/Interface";
 import { useForm } from "react-hook-form";
-const handleSub = (data:any, event:any)=>{
-  event.preventDefault();
-  console.log("data");
-  
-  console.log(data);
-  
-}
+import { useDispatch } from "react-redux";
+import { saveDataFromForm } from "../../../../store/counterSlice";
+
 
 const Section3 = () => {
-  
+  const disp = useDispatch()
+ 
   const {register,handleSubmit} = useForm({
      mode: 'onSubmit', 
       reValidateMode: "onSubmit", 
@@ -41,7 +38,14 @@ const Section3 = () => {
     }
     setCount(() => ({ ...count, hour: hour + delta }));
   };
- 
+  const handleSub = (data:any, event:any)=>{
+    event.preventDefault();
+    console.log("data");
+    
+    console.log(data);
+    disp(saveDataFromForm({...data,...count}))
+    
+  }
 
   return (
     <section className={classSection3.section}>
