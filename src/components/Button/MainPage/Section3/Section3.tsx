@@ -8,9 +8,25 @@ import DifferentInputs from "./components/DifferentInputs";
 import DiffLabelRadio from "./components/DiffLabelRadio";
 import { allAuto } from "./components/auto";
 import { Form } from "../../../../../AllInterface/Interface";
+import { useForm } from "react-hook-form";
+const handleSub = (data:any, event:any)=>{
+  event.preventDefault();
+  console.log("data");
+  
+  console.log(data);
+  
+}
 
 const Section3 = () => {
-
+  
+  const {register,handleSubmit} = useForm({
+     mode: 'onSubmit', 
+      reValidateMode: "onSubmit", 
+     defaultValues: { 
+      name: '',
+       phone: '',
+     },
+  })
   const [count, setCount] = useState<Form>({ movers: 0, hour: 0 });
   const { movers, hour } = count;
   const changeMovers = (delta: number) => {
@@ -30,7 +46,7 @@ const Section3 = () => {
   return (
     <section className={classSection3.section}>
       <div className={classSection3.section_container}>
-        <form>
+        <form onSubmit={handleSubmit(handleSub)}>
           <section className={classSection3.movers}>
             <div className={classSection3.counter}>
               <div>
@@ -156,13 +172,13 @@ const Section3 = () => {
           </section>
 
           <section className={classSection3.names}>
-            <DifferentInputs type="text" pl="Имя" />
+            <DifferentInputs register={register} names="name" type="text" pl="Имя" />
           </section>
           <section className={classSection3.phone}>
-            <DifferentInputs type="tel" pl="+7" />
+            <DifferentInputs register={register} names="phone" type="tel" pl="+7" />
           </section>
           <Button
-            type="button"
+            type="submit"
             isIcon="calculate"
             text="Рассчитать стоимость"
             h={"60px"}

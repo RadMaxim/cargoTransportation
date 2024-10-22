@@ -1,4 +1,5 @@
 import { FormEvent } from "react";
+import { UseFormRegister } from "react-hook-form";
 
 export interface Form {
   movers: number;
@@ -17,6 +18,11 @@ export interface AllInterface {
 export interface DifInput {
   type?: string;
   pl?: string;
+  register:UseFormRegister<{
+    name: string;
+    phone: string;
+}>,
+names:"name"|"phone"
 }
 export interface DiffLabel {
   textLabel?: string;
