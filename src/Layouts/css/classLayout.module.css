@@ -1,0 +1,44 @@
+.header, .footer {
+  position: absolute;
+  background-color: red;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 69px;
+  width: 100%;
+  top: 0%;
+  left: 0;
+  grid-template-columns: 32px 140px 114px;
+  grid-template-rows: 35px;
+  grid-template-areas: "burger logo contact";
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.header section {
+  height: 100%;
+}
+.header section:nth-of-type(1) {
+  grid-area: burger;
+  background-color: rgb(156, 156, 156);
+}
+.header section:nth-of-type(2) {
+  grid-area: logo;
+  background-color: rgb(154, 111, 111);
+}
+.header section:nth-of-type(3) {
+  grid-area: contact;
+  background-color: rgb(0, 255, 162);
+}
+
+.footer {
+  height: 590px;
+  bottom: 0%;
+  left: 0;
+  width: 100%;
+}/*# sourceMappingURL=classLayout.module.css.map */

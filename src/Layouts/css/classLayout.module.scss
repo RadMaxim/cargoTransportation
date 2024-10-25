@@ -1,0 +1,45 @@
+@mixin posGrid(){
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.header,.footer{
+    position: absolute;
+    background-color: red;
+    @include posGrid();
+}
+
+.header{
+    @include posGrid();
+    height: 69px;
+    width: 100%;
+    top: 0%;
+    left: 0;
+    grid-template-columns: 32px 140px 114px;
+    grid-template-rows: 35px;
+    grid-template-areas: "burger logo contact";
+    column-gap: 30px;
+    section{
+        height: 100%;
+    }
+    section:nth-of-type(1){
+        grid-area: burger;
+        background-color: rgb(156, 156, 156);
+    }
+    section:nth-of-type(2){
+        grid-area: logo;
+        background-color: rgb(154, 111, 111);
+    }
+    section:nth-of-type(3){
+        grid-area: contact;
+        background-color: rgb(0, 255, 162);
+    }
+   
+}
+.footer{
+    height: 590px;
+    bottom: 0%;
+    left: 0;
+    width: 100%;
+    
+}

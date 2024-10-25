@@ -7,10 +7,12 @@ import Section4 from "./Section4/Section4";
 import Section5 from "./Section5/Section5";
 import Section6 from "./Section6/Section6";
 import store from "../../../store/store";
+import Layout from "../../../Layouts/Layout";
 
 const MainPage = () => {
   return (
     <Provider store={store}>
+      <Layout>
     <main className={classMainPage.main}>
       <Section1 />
       <Section2 />
@@ -27,6 +29,7 @@ const MainPage = () => {
       <section className={classMainPage.section}></section>
       <section className={classMainPage.section}></section>
     </main>
+    </Layout>
     </Provider>
   );
 };
