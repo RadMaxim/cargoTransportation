@@ -3,13 +3,13 @@
   background-color: red;
   display: grid;
   justify-content: center;
-  align-items: center;
+  align-content: center;
 }
 
 .header {
   display: grid;
   justify-content: center;
-  align-items: center;
+  align-content: center;
   height: 69px;
   width: 100%;
   top: 0%;
@@ -17,6 +17,7 @@
   grid-template-columns: 32px 140px 114px;
   grid-template-rows: 35px;
   grid-template-areas: "burger logo contact";
+  align-content: center;
   -moz-column-gap: 30px;
        column-gap: 30px;
 }

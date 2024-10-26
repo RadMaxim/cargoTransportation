@@ -1,7 +1,7 @@
 @mixin posGrid(){
     display: grid;
     justify-content: center;
-    align-items: center;
+    align-content: center;
 }
 .header,.footer{
     position: absolute;
@@ -18,6 +18,8 @@
     grid-template-columns: 32px 140px 114px;
     grid-template-rows: 35px;
     grid-template-areas: "burger logo contact";
+    align-content: center;
+    
     column-gap: 30px;
     section{
         height: 100%;

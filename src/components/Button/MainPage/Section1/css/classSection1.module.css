@@ -1,3 +1,19 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: 783px 774px 1100px 417px 660px 970px 561px 321px 608px 835px 838px 462px 589px;
+  justify-content: center;
+  grid-template-columns: 100%;
+}
+.main > * {
+  border: 0.1px solid var(--color-orange);
+}
+
 .section {
   display: flex;
   justify-content: center;
@@ -6,4 +22,58 @@
 }
 .section .section_container {
   width: calc(100vw - 32px);
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 100%;
+  grid-template-rows: 70px 106px 60px 83px 253px 163px;
+  grid-template-areas: "section1" "section2" "section3" "section4" "section5" "section6";
+}
+.section .section_container .section1 {
+  grid-area: section1;
+  border: 1px solid rgb(0, 255, 234);
+  padding-top: 0px;
+  display: grid;
+  width: 100%;
+  height: 100%;
+}
+.section .section_container .section2 {
+  grid-area: section2;
+  border: 1px solid rgb(0, 255, 234);
+  padding-top: 24px;
+  display: grid;
+  width: 100%;
+  height: 100%;
+}
+.section .section_container .section3 {
+  grid-area: section3;
+  border: 1px solid rgb(0, 255, 234);
+  padding-top: 20px;
+  display: grid;
+  width: 100%;
+  height: 100%;
+}
+.section .section_container .section4 {
+  grid-area: section4;
+  border: 1px solid rgb(0, 255, 234);
+  padding-top: 20px;
+  display: grid;
+  width: 100%;
+  height: 100%;
+}
+.section .section_container .section5 {
+  grid-area: section5;
+  border: 1px solid rgb(0, 255, 234);
+  padding-top: 33px;
+  display: grid;
+  width: 100%;
+  height: 100%;
+}
+.section .section_container .section6 {
+  grid-area: section6;
+  border: 1px solid rgb(0, 255, 234);
+  padding-top: 46px;
+  display: grid;
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=classSection1.module.css.map */
