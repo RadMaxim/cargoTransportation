@@ -1,0 +1,9 @@
+.radio input[type=radio]:checked ~ label {
+  border-bottom: none;
+  color: var(--color-white);
+}
+.radio label {
+  color: var(--color-orange);
+  padding: 5px;
+  border-bottom: 2px dashed #ffffff;
+}/*# sourceMappingURL=classRadio.module.css.map */

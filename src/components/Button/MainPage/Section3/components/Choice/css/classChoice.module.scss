@@ -1,0 +1,13 @@
+@import './../../../../css/classMainPage.module.scss';
+.choice{
+    @include sizeContainerGrid();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .choice_container{
+        @include sizeContainerGrid();
+        display: flex;
+        justify-content: space-between;
+
+    }
+}

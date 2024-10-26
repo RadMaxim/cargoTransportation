@@ -25,7 +25,8 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-template-columns: 100%;
+  grid-template-columns: calc(100vw - 32px);
+  justify-content: center;
   grid-template-rows: 283px 106px 93px 93px 93px 66px;
   grid-template-areas: "section1" "section2" "section3" "section4" "section5" "section6";
 }

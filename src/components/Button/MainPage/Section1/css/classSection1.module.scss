@@ -10,7 +10,8 @@
     $allGapRow: (0px, 24px, 20px, 20px, 33px, 46px);
     width: getW();
     @include sizeContainerGrid();
-    grid-template-columns: 100%;
+    grid-template-columns: getW();
+    justify-content: center;
     grid-template-rows: 70px 106px 60px 83px 253px 163px;
     grid-template-areas: "section1" "section2" "section3" "section4" "section5" "section6";
     @for $i from 1 to 7{
