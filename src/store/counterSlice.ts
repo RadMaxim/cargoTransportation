@@ -19,8 +19,7 @@ const counterSlice = createSlice({
   reducers: {
     saveDataFromForm: (state, action: PayloadAction<DataFromForm>) => {
       state = { ...action.payload };
-      alert(state)
-      
+      alert(state);
     },
     // setFilterCards: (state, action: PayloadAction<ElementType[]>) => {
     //   state.filterArray = [...action.payload];

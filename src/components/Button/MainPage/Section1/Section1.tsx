@@ -9,14 +9,14 @@ const Section1 = () => {
         <section className={classSection1.section2}></section>
         <section className={classSection1.section3}></section>
         <section className={classSection1.section4}>
-        <Button
-        type="button"
-        isIcon="calculate"
-        text="Рассчитать стоимость"
-        h={"63px"}
-        w={"343px"}
-        color={"btn1"}
-      />
+          <Button
+            type="button"
+            isIcon="calculate"
+            text="Рассчитать стоимость"
+            h={"63px"}
+            w={"343px"}
+            color={"btn1"}
+          />
         </section>
         <section className={classSection1.section5}></section>
         <section className={classSection1.section6}></section>

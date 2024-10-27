@@ -1,12 +1,26 @@
-@function getW() {
-  @return calc(100vw - 32px);
-}
+@import "./../../css/classMainPage.module.scss";
+
 .section {
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
   background: var(--color-backGround2);
+  grid-template-columns: getW();
   .section_container {
-    width: getW();
+    $allGapRow: (40px, 26px, 25px);
+
+   
+    @include sizeContainerGrid();
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 73px 235px 69px;
+    grid-template-areas: "section1" "section2" "section3";
+    @for $i from 1 to 4 {
+      .section#{$i} {
+        grid-area: section#{$i};
+        padding-top: nth($allGapRow, $i);
+      
+      }
+    }
   }
 }

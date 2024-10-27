@@ -1,0 +1,41 @@
+@import "./../../../css/classMainPage.module.scss";
+.gallary {
+   
+     width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  &_container{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    overflow-x: auto;
+   
+    justify-content: space-around;
+    gap: 55px;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+    .imgs{
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+        padding: 14px;
+        width: 100vw !important;
+        height: 209px;
+        @include posElem();
+        border-radius: 20px;
+        background-color: var(--color-white);
+        
+            .img{
+                border-radius: 20px;
+                width: 80vw;
+                height: 168px;
+                object-fit: cover;
+               
+               
+            }
+    }
+  }
+ 
+  
+}

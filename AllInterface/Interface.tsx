@@ -18,11 +18,11 @@ export interface AllInterface {
 export interface DifInput {
   type?: string;
   pl?: string;
-  register:UseFormRegister<{
+  register: UseFormRegister<{
     name: string;
     phone: string;
-}>,
-names:"name"|"phone"
+  }>;
+  names: "name" | "phone";
 }
 export interface DiffLabel {
   textLabel?: string;

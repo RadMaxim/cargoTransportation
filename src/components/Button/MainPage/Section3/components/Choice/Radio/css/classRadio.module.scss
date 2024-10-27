@@ -1,15 +1,11 @@
-.radio{
-    
-
-    input[type="radio"]:checked ~ label{
-        border-bottom: none; 
-        color: var(--color-white);
-    }
-    label{
-        
-        color: var(--color-orange);
-        padding: 5px;
-        border-bottom: 2px dashed #ffffff; 
-
-    }
+.radio {
+  input[type="radio"]:checked ~ label {
+    border-bottom: none;
+    color: var(--color-white);
+  }
+  label {
+    color: var(--color-orange);
+    padding: 5px;
+    border-bottom: 2px dashed #ffffff;
+  }
 }

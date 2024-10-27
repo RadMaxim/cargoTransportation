@@ -1,4 +1,4 @@
-@import './../../css/classMainPage.module.scss';
+@import "./../../css/classMainPage.module.scss";
 
 .section {
   @include posElem();
@@ -12,26 +12,22 @@
     grid-template-columns: 100%;
     grid-template-rows: 88px 113px 60px 801px;
     grid-template-areas: "section1" "section2" "section3" "section4" "section5" "section6";
-    @for $i from 1 to 5{
-      .section#{$i}{
-          grid-area: section#{$i};
-          border: 1px solid rgb(144, 7, 255);
-          padding-top: nth($allGapRow, $i);
-          @include sizeContainerGrid();
-          
+    @for $i from 1 to 5 {
+      .section#{$i} {
+        grid-area: section#{$i};
+        border: 1px solid rgb(144, 7, 255);
+        padding-top: nth($allGapRow, $i);
+        @include sizeContainerGrid();
       }
-    } 
-
+    }
   }
 }
-form{
+form {
   // display: none !important;
   // background-color: red;
 }
-.section4{
-  input[id="porter"][name="choice"]:checked ~ form{
-   
-      display: grid !important;
-    
+.section4 {
+  input[id="porter"][name="choice"]:checked ~ form {
+    display: grid !important;
   }
 }

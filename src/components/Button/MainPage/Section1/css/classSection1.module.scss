@@ -1,5 +1,4 @@
-
-@import './../../css/classMainPage.module.scss';
+@import "./../../css/classMainPage.module.scss";
 
 .section {
   display: flex;
@@ -14,15 +13,13 @@
     justify-content: center;
     grid-template-rows: 70px 106px 60px 83px 253px 163px;
     grid-template-areas: "section1" "section2" "section3" "section4" "section5" "section6";
-    @for $i from 1 to 7{
-      .section#{$i}{
-          grid-area: section#{$i};
-          border: 1px solid rgb(0, 255, 234);
-          padding-top: nth($allGapRow, $i);
-          @include sizeContainerGrid();
-          
+    @for $i from 1 to 7 {
+      .section#{$i} {
+        grid-area: section#{$i};
+        border: 1px solid rgb(0, 255, 234);
+        padding-top: nth($allGapRow, $i);
+        @include sizeContainerGrid();
       }
-    } 
-
+    }
   }
 }

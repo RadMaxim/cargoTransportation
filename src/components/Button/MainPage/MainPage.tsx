@@ -13,23 +13,23 @@ const MainPage = () => {
   return (
     <Provider store={store}>
       <Layout>
-    <main className={classMainPage.main}>
-      <Section1 />
-      <Section2 />
-      <Section3 />
-      <Section4 />
-      <Section5 />
-      <Section6 />
-      <section className={classMainPage.section}></section>
-      <section className={classMainPage.section}></section>
-      <section className={classMainPage.section}></section>
-      <section className={classMainPage.section}></section>
-      <section className={classMainPage.section}></section>
-      <section className={classMainPage.section}></section>
-      <section className={classMainPage.section}></section>
-      <section className={classMainPage.section}></section>
-    </main>
-    </Layout>
+        <main className={classMainPage.main}>
+          <Section1 />
+          <Section2 />
+          <Section3 />
+          <Section4 />
+          <Section5 />
+          <Section6 />
+          <section className={classMainPage.section}></section>
+          <section className={classMainPage.section}></section>
+          <section className={classMainPage.section}></section>
+          <section className={classMainPage.section}></section>
+          <section className={classMainPage.section}></section>
+          <section className={classMainPage.section}></section>
+          <section className={classMainPage.section}></section>
+          <section className={classMainPage.section}></section>
+        </main>
+      </Layout>
     </Provider>
   );
 };
