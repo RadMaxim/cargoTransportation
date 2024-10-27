@@ -1,9 +1,9 @@
 import classGallary from "./css/classGallary.module.css";
 // import img from "./../../../../../../public/galary/m1.jfif";
-import img1 from "./../../../../../../public/galary/m1.png";
-import img2 from "./../../../../../../public/galary/m2.png";
-import img3 from "./../../../../../../public/galary/m3.png";
-import img4 from "./../../../../../../public/galary/m1.png";
+import img1 from "./../../../../../../public/galary/m1.jfif";
+import img2 from "./../../../../../../public/galary/m2.jfif";
+import img3 from "./../../../../../../public/galary/m3.jfif";
+import img4 from "./../../../../../../public/galary/m4.jfif";
 const arrayImg = [
   { src: img1 },
   { src: img2 },
