@@ -17,7 +17,7 @@ const Gallary = () => {
 
  {arrayImg.map((elem) => (
         <div className={classGallary.imgs} key={elem.src}>
-          <img className={classGallary.img} src={elem.src} alt="" />
+          <img loading="lazy" className={classGallary.img} src={elem.src} alt="" />
         </div>
       ))}
 
