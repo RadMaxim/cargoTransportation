@@ -5,7 +5,7 @@ const Choice = () => {
   return (
     <section className={classChoice.choice}>
       <div className={classChoice.choice_container}>
-        <Radio start={true} textLabel="Грузчики" id="porter" />
+        <Radio  textLabel="Грузчики" id="porter" />
         <Radio textLabel="Такелаж" id="Rigging" />
         <Radio textLabel="Переезд" id="Moving" />
         <Radio textLabel="Разнорабочие" id="Handymen" />

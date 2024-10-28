@@ -18,8 +18,10 @@ export interface Button {
   h: string;
   text?: string;
   type: "button" | "submit";
+  numPicture?:boolean;
+  method?:()=>void
 }
-const Button = memo(({ color, isIcon, w, h, text, type }: Button) => {
+const Button = memo(({ color, isIcon, w, h, text, type,numPicture,method }: Button) => {
   const iconsLink =
     isIcon == "calculate"
       ? calculate
@@ -37,12 +39,14 @@ const Button = memo(({ color, isIcon, w, h, text, type }: Button) => {
                   ? pagR
                   : isIcon == "pagRLight"
                     ? pagRLight
-                    : isIcon == "pagLRight"
+                    : isIcon == "pagLLight"
                       ? pagLLight
                       : "";
 
   return (
     <button
+    onClick={method}
+    disabled={numPicture}
       type={type}
       className={`${classButton.button} ${classButton[color]} `}
       style={{ width: w, height: h }}

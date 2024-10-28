@@ -42,7 +42,6 @@
   align-items: center;
   border-radius: 20px;
   background-color: var(--color-white);
-  background: url("./../../../../../../../public/loading/loading.webp") center center no-repeat;
 }
 .gallary_container .imgs .img {
   border-radius: 20px;
