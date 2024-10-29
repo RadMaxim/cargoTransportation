@@ -17,10 +17,44 @@
     grid-template-areas: "section1" "section2" "section3";
     @for $i from 1 to 4 {
       .section#{$i} {
+        @include posElem();
+        // width: 100%;
+        height: 100%;
+        gap: 10px;
         grid-area: section#{$i};
         padding-top: nth($allGapRow, $i);
+        div{
+          background-color: rgba(0, 0, 0, 0) !important;
+          width: 100%;
+          height: 100%;
+        }
       
       }
     }
   }
+}
+.imgs{
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  padding: 14px;
+  width: 100vw !important;
+  height: 209px;
+  @include posElem();
+  border-radius: 20px !important;
+  background-color: var(--color-white);
+      .img{
+          border-radius: 20px;
+          width: 80vw;
+          height: 168px;
+          object-fit: cover;
+         
+         
+      }
+}
+
+li{
+  background-color: var(--color-white) !important;
+  @include posElem();
+  border-radius: 20px !important;
+
 }

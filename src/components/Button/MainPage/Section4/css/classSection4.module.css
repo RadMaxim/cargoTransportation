@@ -31,14 +31,72 @@
   grid-template-areas: "section1" "section2" "section3";
 }
 .section .section_container .section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 10px;
   grid-area: section1;
   padding-top: 40px;
 }
+.section .section_container .section1 div {
+  background-color: rgba(0, 0, 0, 0) !important;
+  width: 100%;
+  height: 100%;
+}
 .section .section_container .section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 10px;
   grid-area: section2;
   padding-top: 26px;
 }
+.section .section_container .section2 div {
+  background-color: rgba(0, 0, 0, 0) !important;
+  width: 100%;
+  height: 100%;
+}
 .section .section_container .section3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  gap: 10px;
   grid-area: section3;
   padding-top: 25px;
+}
+.section .section_container .section3 div {
+  background-color: rgba(0, 0, 0, 0) !important;
+  width: 100%;
+  height: 100%;
+}
+
+.imgs {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  padding: 14px;
+  width: 100vw !important;
+  height: 209px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px !important;
+  background-color: var(--color-white);
+}
+.imgs .img {
+  border-radius: 20px;
+  width: 80vw;
+  height: 168px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+li {
+  background-color: var(--color-white) !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px !important;
 }/*# sourceMappingURL=classSection4.module.css.map */
