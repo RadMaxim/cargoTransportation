@@ -18,7 +18,7 @@
 // const Gallary = () => {
 //   const [currentSlide, setCurrentSlide] = useState(0);
 //   const carouselRef = useRef<Carousel>(null);
- 
+
 //   const responsive = {
 //     superLargeDesktop: {
 //       breakpoint: { max: 4000, min: 3000 },
@@ -42,7 +42,7 @@
 //     if (carouselRef.current) {
 //       carouselRef.current.next();
 //       console.log(carouselRef.current);
-      
+
 //     }
 //   };
 
@@ -50,7 +50,7 @@
 //     if (carouselRef.current) {
 //       carouselRef.current.previous();
 //       console.log("prev");
-      
+
 //     }
 //   };
 
@@ -61,10 +61,6 @@
 //   // console.dir(refChild.current?.clientWidth);
 //   const wElem =refChild.current?.clientWidth;
 //   console.log(scroll,wElem);
-  
-  
-  
-  
 
 //   return (<> <div className={classGallary.gallary}>
 //     <div ref={ref} className={classGallary.gallary_container}>
@@ -74,11 +70,10 @@
 //       {/* <IMGLoadingLazy> */}
 //       <img  className={classGallary.img} src={elem.src} alt="" />
 //       {/* </IMGLoadingLazy> */}
-      
+
 //     </div>
 //   ))}
 //           </Carousel>
-
 
 //     </div>
 //     <Button
@@ -102,8 +97,7 @@
 // </div>
 
 //  </>
-      
-   
+
 //   );
 // };
 // export default Gallary;

@@ -1,12 +1,17 @@
+import React from "react";
 import Button from "../../../Button";
 import classServices from "./css/classServices.module.css";
-
-const Services = () => {
+import Text from "../../../../Text/Text";
+export interface Services{
+  text:string,
+  price:string
+}
+const Services:React.FC<Services> = ({text,price}) => {
   return (
-    <div className={classServices.mainServic}>
+    <section className={classServices.mainServic}>
       <div className={classServices.main_container_servic}>
-        <section></section>
-        <section></section>
+        <Text>{text}</Text>
+        <Text>{price}</Text>
         <section>
           <Button
             type="button"
@@ -17,7 +22,7 @@ const Services = () => {
           />
         </section>
       </div>
-    </div>
+    </section>
   );
 };
 export default Services;

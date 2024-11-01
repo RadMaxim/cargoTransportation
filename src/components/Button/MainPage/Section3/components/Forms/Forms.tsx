@@ -8,8 +8,8 @@ import moversIMG from "./../../../../../../../public/icons/formsIcons/movers.svg
 import hourImg from "./../../../../../../../public/icons/formsIcons/Hour.svg";
 import rectangles from "./../../../../../../../public/icons/formsIcons/rectangles.svg";
 import Button from "../../../../Button";
-import DiffLabelRadio from "../DiffLabelRadio";
-import { allAuto } from "./../auto.ts";
+import DiffLabelRadio from "../DiffLabelRadio.tsx";
+import { allAuto } from "../auto.ts";
 import DifferentInputs from "../DifferentInputs.tsx";
 const Forms = () => {
   const disp = useDispatch();

@@ -30,7 +30,6 @@
 }
 .section .section_container .section1 {
   grid-area: section1;
-  border: 1px solid rgb(144, 7, 255);
   padding-top: 45px;
   display: grid;
   width: 100%;
@@ -38,7 +37,6 @@
 }
 .section .section_container .section2 {
   grid-area: section2;
-  border: 1px solid rgb(144, 7, 255);
   padding-top: 9px;
   display: grid;
   width: 100%;
@@ -46,7 +44,6 @@
 }
 .section .section_container .section3 {
   grid-area: section3;
-  border: 1px solid rgb(144, 7, 255);
   padding-top: 38px;
   display: grid;
   width: 100%;
@@ -54,7 +51,6 @@
 }
 .section .section_container .section4 {
   grid-area: section4;
-  border: 1px solid rgb(144, 7, 255);
   padding-top: 31px;
   display: grid;
   width: 100%;

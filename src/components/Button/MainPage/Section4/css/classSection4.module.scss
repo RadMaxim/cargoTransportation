@@ -9,7 +9,6 @@
   .section_container {
     $allGapRow: (40px, 26px, 25px);
 
-   
     @include sizeContainerGrid();
     justify-content: center;
     grid-template-columns: 100%;
@@ -18,22 +17,20 @@
     @for $i from 1 to 4 {
       .section#{$i} {
         @include posElem();
-        // width: 100%;
         height: 100%;
         gap: 10px;
         grid-area: section#{$i};
         padding-top: nth($allGapRow, $i);
-        div{
+        div {
           background-color: rgba(0, 0, 0, 0) !important;
           width: 100%;
           height: 100%;
         }
-      
       }
     }
   }
 }
-.imgs{
+.imgs {
   scroll-snap-align: start;
   scroll-snap-stop: always;
   padding: 14px;
@@ -42,19 +39,16 @@
   @include posElem();
   border-radius: 20px !important;
   background-color: var(--color-white);
-      .img{
-          border-radius: 20px;
-          width: 80vw;
-          height: 168px;
-          object-fit: cover;
-         
-         
-      }
+  .img {
+    border-radius: 20px;
+    width: 80vw;
+    height: 168px;
+    object-fit: cover;
+  }
 }
 
-li{
+li {
   background-color: var(--color-white) !important;
   @include posElem();
   border-radius: 20px !important;
-
 }

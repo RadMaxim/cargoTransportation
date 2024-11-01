@@ -18,44 +18,46 @@ export interface Button {
   h: string;
   text?: string;
   type: "button" | "submit";
-  numPicture?:boolean;
-  method?:()=>void
+  numPicture?: boolean;
+  method?: () => void;
 }
-const Button = memo(({ color, isIcon, w, h, text, type,numPicture,method }: Button) => {
-  const iconsLink =
-    isIcon == "calculate"
-      ? calculate
-      : isIcon == "phone"
-        ? phone
-        : isIcon == "plus"
-          ? plus
-          : isIcon == "minus"
-            ? minus
-            : isIcon == "galya"
-              ? galya
-              : isIcon == "pagL"
-                ? pagL
-                : isIcon == "pagR"
-                  ? pagR
-                  : isIcon == "pagRLight"
-                    ? pagRLight
-                    : isIcon == "pagLLight"
-                      ? pagLLight
-                      : "";
+const Button = memo(
+  ({ color, isIcon, w, h, text, type, numPicture, method }: Button) => {
+    const iconsLink =
+      isIcon == "calculate"
+        ? calculate
+        : isIcon == "phone"
+          ? phone
+          : isIcon == "plus"
+            ? plus
+            : isIcon == "minus"
+              ? minus
+              : isIcon == "galya"
+                ? galya
+                : isIcon == "pagL"
+                  ? pagL
+                  : isIcon == "pagR"
+                    ? pagR
+                    : isIcon == "pagRLight"
+                      ? pagRLight
+                      : isIcon == "pagLLight"
+                        ? pagLLight
+                        : "";
 
-  return (
-    <button
-    onClick={method}
-    disabled={numPicture}
-      type={type}
-      className={`${classButton.button} ${classButton[color]} `}
-      style={{ width: w, height: h }}
-    >
-      <div className={classButton.button_container}>
-        {isIcon ? <img src={iconsLink} alt="" /> : ""}
-        {text ? <p>{text}</p> : ""}
-      </div>
-    </button>
-  );
-});
+    return (
+      <button
+        onClick={method}
+        disabled={numPicture}
+        type={type}
+        className={`${classButton.button} ${classButton[color]} `}
+        style={{ width: w, height: h }}
+      >
+        <div className={classButton.button_container}>
+          {isIcon ? <img src={iconsLink} alt="" /> : ""}
+          {text ? <p>{text}</p> : ""}
+        </div>
+      </button>
+    );
+  },
+);
 export default Button;
