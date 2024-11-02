@@ -78,7 +78,7 @@ const Section4 = () => {
             isIcon="pagLLight"
             h={"44px"}
             w={"44px"}
-            color={"btn5"}
+            color={"btn1"}
           />
           <Button
             numPicture={state === arrayImg.length - 1}
@@ -87,7 +87,7 @@ const Section4 = () => {
             isIcon="pagRLight"
             h={"44px"}
             w={"44px"}
-            color={"btn5"}
+            color={"btn1"}
           />
         </section>
       </div>

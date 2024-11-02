@@ -6,10 +6,7 @@
   background: var(--color-backGround3);
   .section_container {
     $allGapRow: (45px, 9px, 38px, 31px);
-
-    width: getW();
-    display: grid;
-    grid-template-columns: 100%;
+    @include sectionCpntainer();
     grid-template-rows: 88px 113px 60px 801px;
     grid-template-areas: "section1" "section2" "section3" "section4" "section5" "section6";
     @for $i from 1 to 5 {
@@ -19,14 +16,5 @@
         @include sizeContainerGrid();
       }
     }
-  }
-}
-form {
-  // display: none !important;
-  // background-color: red;
-}
-.section4 {
-  input[id="porter"][name="choice"]:checked ~ form {
-    display: grid !important;
   }
 }

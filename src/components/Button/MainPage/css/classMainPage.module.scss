@@ -1,21 +1,29 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
+
+
 @function getW() {
   @return calc(100vw - 32px);
+}
+@mixin posElem($gap) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
 }
 @mixin sizeContainerGrid() {
   display: grid;
   width: 100%;
-
   height: 100%;
 }
 @mixin posElem() {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@mixin sectionCpntainer(){
+    width: getW();
+    @include sizeContainerGrid();
+    grid-template-columns: getW();
+    justify-content: center;
 }
 $rows: (
   783px 774px 1100px 417px 660px 970px 561px 321px 608px 835px 838px 462px 589px
