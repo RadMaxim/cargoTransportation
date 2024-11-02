@@ -24,6 +24,7 @@
     @include sizeContainerGrid();
     grid-template-columns: getW();
     justify-content: center;
+    justify-items: center;
 }
 $rows: (
   783px 774px 1100px 417px 660px 970px 561px 321px 608px 835px 838px 462px 589px

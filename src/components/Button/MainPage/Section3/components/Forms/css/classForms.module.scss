@@ -4,8 +4,10 @@ form {
   button {
     width: 100%;
   }
-  // height: 670px;
+ 
   display: grid;
+  justify-content: center;
+  justify-items: center;
   grid-template-columns: getW();
   grid-template-rows: 100px 100px 100px 70px 70px 70px 60px 60px;
   grid-template-areas:

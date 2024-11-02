@@ -15,6 +15,7 @@
         grid-area: section#{$i};
         padding-top: nth($allGapRow, $i);
         @include sizeContainerGrid();
+        justify-items: center;
       }
     }
   }

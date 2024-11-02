@@ -1,9 +1,3 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 .main {
   display: grid;
   grid-template-rows: 783px 774px 1100px 417px 660px 970px 561px 321px 608px 835px 838px 462px 589px;
@@ -16,6 +10,8 @@
 
 form {
   display: grid;
+  justify-content: center;
+  justify-items: center;
   grid-template-columns: calc(100vw - 32px);
   grid-template-rows: 100px 100px 100px 70px 70px 70px 60px 60px;
   grid-template-areas: "section1" "section2" "section3" "section4" "section5" "section6" "section7" "section8";
@@ -114,7 +110,7 @@ form section:nth-of-type(8) {
   border-radius: 29px;
 }
 
-input[type="radio"] {
+input[type=radio] {
   display: none;
 }
 
@@ -132,8 +128,8 @@ input[type="radio"] {
   transition: top 0.2s ease-in-out;
 }
 
-input[name="openOrClose"]:checked ~ .allServices,
-input[id="openWorker"]:checked ~ .allTypeJob {
+input[name=openOrClose]:checked ~ .allServices,
+input[id=openWorker]:checked ~ .allTypeJob {
   top: 0;
   z-index: 10;
 }
@@ -172,8 +168,8 @@ input[id="openWorker"]:checked ~ .allTypeJob {
   outline: none;
   border: none;
   -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
+     -moz-appearance: none;
+          appearance: none;
   background-color: var(--color-backGround2);
 }
 .cars div select:focus option {
@@ -204,7 +200,7 @@ input[id="openWorker"]:checked ~ .allTypeJob {
   justify-content: center;
   align-items: center;
   -moz-column-gap: 11px;
-  column-gap: 11px;
+       column-gap: 11px;
 }
 .img1 p {
   font-size: 1rem;
@@ -230,7 +226,7 @@ input[id="openWorker"]:checked ~ .allTypeJob {
   justify-content: center;
   align-items: center;
   -moz-column-gap: 11px;
-  column-gap: 11px;
+       column-gap: 11px;
 }
 
 .typeWork div {
@@ -238,5 +234,5 @@ input[id="openWorker"]:checked ~ .allTypeJob {
   justify-content: center;
   align-items: center;
   -moz-column-gap: 11px;
-  column-gap: 11px;
-} /*# sourceMappingURL=classForms.module.css.map */
+       column-gap: 11px;
+}/*# sourceMappingURL=classForms.module.css.map */
