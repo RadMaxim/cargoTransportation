@@ -50,7 +50,8 @@ const Button = memo(
         disabled={numPicture}
         type={type}
         className={`${classButton.button} ${classButton[color]} `}
-        style={{ width: w, height: h }}
+        style={{maxWidth: w, height: h,padding:10 }}
+        
       >
         <div className={classButton.button_container}>
           {isIcon ? <img src={iconsLink} alt="" /> : ""}
