@@ -18,6 +18,7 @@
 }
 .choice .choice_container {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   width: calc(100vw - 32px);
 }/*# sourceMappingURL=classChoice.module.css.map */
