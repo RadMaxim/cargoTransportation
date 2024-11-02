@@ -22,6 +22,7 @@
   height: 100%;
   grid-template-columns: calc(100vw - 32px);
   justify-content: center;
+  justify-items: center;
   grid-template-rows: 88px 113px 60px 801px;
   grid-template-areas: "section1" "section2" "section3" "section4" "section5" "section6";
 }
