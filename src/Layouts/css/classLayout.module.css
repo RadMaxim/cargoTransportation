@@ -20,7 +20,7 @@
   grid-template-areas: "burger logo contact";
   align-content: center;
   -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
 }
 .header section {
   height: 100%;
@@ -43,4 +43,4 @@
   bottom: 0%;
   left: 0;
   width: 100%;
-}/*# sourceMappingURL=classLayout.module.css.map */
+} /*# sourceMappingURL=classLayout.module.css.map */

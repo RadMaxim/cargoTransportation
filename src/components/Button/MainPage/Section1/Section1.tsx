@@ -7,8 +7,12 @@ const Section1 = () => {
     <section className={classSection1.section}>
       <div className={classSection1.section_container}>
         <section className={classSection1.section1}></section>
-        <section className={classSection1.section2}><Text>Такелажные работы в Москве</Text></section>
-        <section className={classSection1.section3}><Text>Выполняем любые виды работ.  Приедем за 60 минут</Text></section>
+        <section className={classSection1.section2}>
+          <Text>Такелажные работы в Москве</Text>
+        </section>
+        <section className={classSection1.section3}>
+          <Text>Выполняем любые виды работ.  Приедем за 60 минут</Text>
+        </section>
         <section className={classSection1.section4}>
           <Button
             type="button"

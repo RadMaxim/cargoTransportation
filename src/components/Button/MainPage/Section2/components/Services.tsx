@@ -2,11 +2,11 @@ import React from "react";
 import Button from "../../../Button";
 import classServices from "./css/classServices.module.css";
 import Text from "../../../../Text/Text";
-export interface Services{
-  text:string,
-  price:string
+export interface Services {
+  text: string;
+  price: string;
 }
-const Services:React.FC<Services> = ({text,price}) => {
+const Services: React.FC<Services> = ({ text, price }) => {
   return (
     <section className={classServices.mainServic}>
       <div className={classServices.main_container_servic}>

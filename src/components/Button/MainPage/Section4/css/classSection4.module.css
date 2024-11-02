@@ -90,7 +90,7 @@
   width: 80vw;
   height: 168px;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 li {
@@ -99,4 +99,4 @@ li {
   justify-content: center;
   align-items: center;
   border-radius: 20px !important;
-}/*# sourceMappingURL=classSection4.module.css.map */
+} /*# sourceMappingURL=classSection4.module.css.map */

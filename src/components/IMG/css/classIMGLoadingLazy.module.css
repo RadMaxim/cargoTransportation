@@ -15,14 +15,25 @@
 }
 
 @keyframes skeleton {
-  0%, 100% {
-    background: linear-gradient(90deg, rgba(128, 128, 128, 0.5) 25%, rgb(239, 239, 239) 50%, rgba(128, 128, 128, 0.5) 75%);
+  0%,
+  100% {
+    background: linear-gradient(
+      90deg,
+      rgba(128, 128, 128, 0.5) 25%,
+      rgb(239, 239, 239) 50%,
+      rgba(128, 128, 128, 0.5) 75%
+    );
     background-size: 200% 100%;
     background-position: 0% 0%;
   }
   50% {
-    background: linear-gradient(90deg, rgba(128, 128, 128, 0.5) 25%, rgb(239, 239, 239) 50%, rgba(128, 128, 128, 0.5) 75%);
+    background: linear-gradient(
+      90deg,
+      rgba(128, 128, 128, 0.5) 25%,
+      rgb(239, 239, 239) 50%,
+      rgba(128, 128, 128, 0.5) 75%
+    );
     background-size: 200% 100%;
     background-position: 100% 0%;
   }
-}/*# sourceMappingURL=classIMGLoadingLazy.module.css.map */
+} /*# sourceMappingURL=classIMGLoadingLazy.module.css.map */

@@ -12,7 +12,6 @@
     grid-template-areas: "text price button";
     section:nth-child(1) {
       grid-area: text;
-     
     }
     section:nth-child(2) {
       grid-area: price;
