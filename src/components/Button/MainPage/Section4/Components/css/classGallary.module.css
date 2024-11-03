@@ -1,9 +1,3 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 .main {
   display: grid;
   grid-template-rows: 783px 774px 1100px 417px 660px 970px 561px 321px 608px 835px 838px 462px 589px;
@@ -48,5 +42,5 @@
   width: 80vw;
   height: 168px;
   -o-object-fit: cover;
-  object-fit: cover;
-} /*# sourceMappingURL=classGallary.module.css.map */
+     object-fit: cover;
+}/*# sourceMappingURL=classGallary.module.css.map */

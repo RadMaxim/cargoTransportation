@@ -17,6 +17,12 @@
   animation: skeleton 1.5s ease-in-out infinite;
 }
 
+.img {
+  border-radius: 20px;
+  // width: 80vw;
+  // height: 168px;
+  object-fit: cover;
+}
 @keyframes skeleton {
   0%,
   100% {

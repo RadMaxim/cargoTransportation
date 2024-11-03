@@ -12,6 +12,7 @@
       .section#{$i} {
         @include posElem();
         height: 100%;
+        width: 100%;
         gap: 10px;
         grid-area: section#{$i};
         padding-top: nth($allGapRow, $i);
@@ -33,12 +34,7 @@
   @include posElem();
   border-radius: 20px !important;
   background-color: var(--color-white);
-  .img {
-    border-radius: 20px;
-    width: 80vw;
-    height: 168px;
-    object-fit: cover;
-  }
+  
 }
 
 li {

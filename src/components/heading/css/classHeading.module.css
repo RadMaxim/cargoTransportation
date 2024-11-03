@@ -1,0 +1,23 @@
+@font-face {
+  font-family: EuclidCircularA-Light;
+  src: url("./../../../../fonts/EuclidCircularA-Light.ttf");
+}
+h1, h2, h3 {
+  font-family: EuclidCircularA-Light;
+}
+
+.c132 {
+  color: var(--color-white);
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.c226 {
+  color: var(--color-black);
+  font-size: 1.625rem;
+}
+
+.c126 {
+  font-size: 1.625rem;
+  color: var(--color-white);
+}/*# sourceMappingURL=classHeading.module.css.map */

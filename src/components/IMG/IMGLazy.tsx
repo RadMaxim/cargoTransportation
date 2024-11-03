@@ -1,13 +1,18 @@
-import React from "react";
+import React, { PropsWithChildren } from "react";
 import classIMGLoadingLazy from "./css/classIMGLoadingLazy.module.css";
 import useInViewImage from "./hooks/ViewIMGHooks";
-
-const IMGLoadingLazy: React.FC<React.PropsWithChildren> = ({ children }) => {
+export interface IMGLoadingLazy extends PropsWithChildren{
+    src?:string,
+    width?:number,
+    height:number
+}
+const IMGLoadingLazy: React.FC<IMGLoadingLazy> = ({ src,width,height }) => {
   const { ref, inView } = useInViewImage();
   return (
     <div ref={ref} className={classIMGLoadingLazy.main}>
       {inView ? (
-        <>{children}</>
+          <img style={{minWidth:width, maxHeight:height}} className={classIMGLoadingLazy.img} src={src} alt="" />
+
       ) : (
         <div className={classIMGLoadingLazy.reserv}></div>
       )}

@@ -8,13 +8,15 @@ import img4 from "./../../../../../public/galary/m4.jfif";
 import { useRef, useState } from "react";
 import Button from "../../Button";
 import IMGLoadingLazy from "../../../IMG/IMGLazy";
+import Heading from "../../../heading/Heading";
 
 const arrayImg = [{ src: img1 }, { src: img2 }, { src: img3 }, { src: img4 }];
 
 const Section4 = () => {
   const carouselRef = useRef<Carousel>(null);
   const [state, setState] = useState<number>(0);
-
+  console.log(arrayImg);
+  
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -57,15 +59,14 @@ const Section4 = () => {
   return (
     <section className={classSection4.section}>
       <div className={classSection4.section_container}>
-        <section className={classSection4.section1}></section>
+        <section className={classSection4.section1}>
+          <Heading mode={2} lvl={3}>Фотогалерея</Heading>
+        </section>
         <section className={classSection4.section2}>
           <Carousel ref={carouselRef} arrows={false} responsive={responsive}>
             {arrayImg.map((elem) => (
               <div className={classSection4.imgs} key={elem.src}>
-                <IMGLoadingLazy>
-                  {" "}
-                  <img className={classSection4.img} src={elem.src} alt="" />
-                </IMGLoadingLazy>
+                <IMGLoadingLazy height={168} width={300} src={elem.src}/>
               </div>
             ))}
           </Carousel>

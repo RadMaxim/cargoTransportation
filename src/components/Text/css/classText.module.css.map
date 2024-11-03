@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"classText.module.css"}
+{"version":3,"sources":["classText.module.scss","classText.module.css"],"names":[],"mappings":"AAAA;EACI,kCAAA;EACA,yDAAA;ACCJ;ADEA;EACI,eAAA;ACAJ;;ADEA;EACI,kCAAA;ACCJ;;ADCA;EACI,yBAAA;EACA,0BAAA;ACEJ","file":"classText.module.css"}

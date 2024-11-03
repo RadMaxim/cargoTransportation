@@ -21,4 +21,5 @@
   height: 100%;
   grid-template-columns: calc(100vw - 32px);
   justify-content: center;
+  justify-items: center;
 }/*# sourceMappingURL=classSection5.module.css.map */

@@ -1,4 +1,6 @@
 .radio {
+  max-width: 100px;
+  max-height: 41px;
   input[type="radio"]:checked ~ label {
     border-bottom: none;
     color: var(--color-white);

@@ -1,4 +1,8 @@
-.radio input[type="radio"]:checked ~ label {
+.radio {
+  max-width: 100px;
+  max-height: 41px;
+}
+.radio input[type=radio]:checked ~ label {
   border-bottom: none;
   color: var(--color-white);
 }
@@ -6,4 +10,4 @@
   color: var(--color-orange);
   padding: 5px;
   border-bottom: 2px dashed #ffffff;
-} /*# sourceMappingURL=classRadio.module.css.map */
+}/*# sourceMappingURL=classRadio.module.css.map */

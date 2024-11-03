@@ -1,4 +1,5 @@
-import Text from "../../../Text/Text";
+import Heading from "../../../heading/Heading";
+
 import Button from "../../Button";
 import Services from "./components/Services";
 import classSection2 from "./css/classSection2.module.css";
@@ -22,7 +23,7 @@ const Section2 = () => {
       <div className={classSection2.section_container}>
         <section className={classSection2.section1}></section>
         <section className={classSection2.section2}>
-          <Text>Популярные услуги с ценами</Text>
+          <Heading mode={2} lvl={3}>Популярные услуги с ценами</Heading> 
         </section>
 
         <section className={classSection2.section3}>
