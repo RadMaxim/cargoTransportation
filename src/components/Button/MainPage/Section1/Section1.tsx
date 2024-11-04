@@ -28,7 +28,7 @@ const Section1 = () => {
           />
         </section>
         <section className={classSection1.section5}>  
-          <IMGLoadingLazy height={400} src={img} width={340}/></section>
+          <IMGLoadingLazy height={400} src={img} width={100}/></section>
         <section className={classSection1.section6}></section>
       </div>
     </section>

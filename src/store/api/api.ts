@@ -1,62 +1,43 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
+const KEY_API = "43093131-6aaad8110d954fdeab2747c5d";
+const URL_API = "https://pixabay.com/api/videos/";
+interface PixabayResponse {
+  total: number;
+  totalHits: number;
+  hits: Video[];
+  // ... другие свойства
+}
 
-// import {
-//   ElementsResponse,
-//   ForPagination,
-//   typeData,
-// } from "../../All_Interface/api/api";
-const URL_API = "https://swapi.dev/api/";
+// Интерфейс для видео
+interface Video {
+  id: number;
+  webformatURL: string;
+  tags: string;
+  user: string;
+  // ... другие свойства
+}
 
 export const api = createApi({
-  tagTypes: ["Person"],
+  tagTypes: ["videos"],
   reducerPath: "api",
   baseQuery: fetchBaseQuery({
     baseUrl: URL_API,
   }),
-  endpoints: () => ({
-    // getDataAboutOurCards: builder.query<ElementsResponse, number>({
-    //   query: (page) => `people?page=${page}`,
-    // }),
-    // getFilterDataAboutOurCards: builder.query<ElementsResponse, typeData>({
-    //   query: ({ search, page }: typeData) => {
-    //     let url = `people/?page=${page}`;
-    //     if (search) {
-    //       url += `&search=${search}`;
-    //     }
-    //     return url;
-    //   },
-    //   providesTags: (result, _, { search, page }) => {
-    //     if (result) {
-    //       const res = [
-    //         ...result.results.map((elem: ElementType) => ({
-    //           type: "Person" as const,
-    //           id: elem.name,
-    //         })),
-    //         {
-    //           type: "Person" as const,
-    //           id: `page - ${page} - search - ${search} `,
-    //         },
-    //       ];
-    //       return res;
-    //     } else {
-    //       return [{ type: "Person" as const, id: "PARTIAL-LIST" }];
-    //     }
-    //   },
-    // }),
-    // getTotalPageSearch: builder.query<ElementsResponse, ForPagination>({
-    //   query: ({ search }) => {
-    //     let url = "people";
-    //     if (search) {
-    //       return (url += `/?search=${search}`);
-    //     }
-    //     return url;
-    //   },
-    // }),
+  refetchOnMountOrArgChange:false,
+  endpoints: (builder) => ({
+    getVideos: builder.query({
+      query: () => ({
+        url: "/",
+        params: { key: KEY_API },
+      }),
+      transformResponse: (data: PixabayResponse) => {
+        return data.hits;
+      },
+    }),
   }),
+  
 });
 
 export const {
-  // useGetDataAboutOurCardsQuery,
-  // useGetFilterDataAboutOurCardsQuery,
-  // useGetTotalPageSearchQuery,
+  useGetVideosQuery
 } = api;

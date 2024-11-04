@@ -15,22 +15,40 @@
     gap: 55px;
     scrollbar-width: none;
     scroll-snap-type: x mandatory;
-    .imgs {
-      scroll-snap-align: start;
-      scroll-snap-stop: always;
-      padding: 14px;
-      width: 100vw !important;
-      height: 209px;
-      @include posElem();
-      border-radius: 20px;
-      background-color: var(--color-white);
-      // background: url("./../../../../../../../public/loading/loading.webp")  center center no-repeat;
-      .img {
-        border-radius: 20px;
-        width: 80vw;
-        height: 168px;
-        object-fit: cover;
-      }
+    
+  }
+}
+.imgs {
+  // scroll-snap-align: start;
+  // scroll-snap-stop: always;
+  padding: 14px;
+  
+  height: 209px;
+  @include posElem();
+  
+  border-radius: 20px !important;
+  background-color: var(--color-white);
+  
+}
+div {
+  background-color: rgba(0, 0, 0, 0) !important;
+  width: 100%;
+  height: 100%;
+}
+$allGapRow: (40px, 26px, 25px);
+
+@for $i from 1 to 4 {
+  .section#{$i} {
+    @include posElem();
+    height: 100%;
+    width: 100%;
+    gap: 10px;
+    grid-area: section#{$i};
+    padding-top: nth($allGapRow, $i);
+    div {
+      background-color: rgba(0, 0, 0, 0) !important;
+      width: 100%;
+      height: 100%;
     }
   }
 }

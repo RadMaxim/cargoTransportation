@@ -25,17 +25,7 @@
     }
   }
 }
-.imgs {
-  scroll-snap-align: start;
-  scroll-snap-stop: always;
-  padding: 14px;
-  width: 100vw !important;
-  height: 209px;
-  @include posElem();
-  border-radius: 20px !important;
-  background-color: var(--color-white);
-  
-}
+
 
 li {
   background-color: var(--color-white) !important;

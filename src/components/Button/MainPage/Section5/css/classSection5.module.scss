@@ -5,6 +5,28 @@
   align-items: center;
   background: var(--color-backGround3);
   .section_container {
+    $allGapRow: (34px, 17px, 28px,28px);
+
     @include sectionCpntainer();
+    grid-template-rows: 67px 158px 69px 319px;
+    grid-template-areas: "section1" "section2" "section3" "section4";
+    @for $i from 1 to 5{
+      .section#{$i}{
+        grid-area: section#{$i};
+        // background-color: red;
+        @include posElem();
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        gap: 10px;
+        padding-top: nth($allGapRow, $i);
+        section{
+          width: 100%;
+          height: 100%;
+          
+         
+        }
+      }
+    }
   }
 }
