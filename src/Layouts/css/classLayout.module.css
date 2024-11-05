@@ -27,15 +27,12 @@
 }
 .header section:nth-of-type(1) {
   grid-area: burger;
-  background-color: rgb(156, 156, 156);
 }
 .header section:nth-of-type(2) {
   grid-area: logo;
-  background-color: rgb(154, 111, 111);
 }
 .header section:nth-of-type(3) {
   grid-area: contact;
-  background-color: rgb(0, 255, 162);
 }
 
 .footer {

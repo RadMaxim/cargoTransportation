@@ -1,6 +1,12 @@
 @import "./../../css/classMainPage.module.scss";
 
 .section {
+  li {
+    background-color: var(--color-white) !important;
+    @include posElem();
+    border-radius: 20px !important;
+  }
+  
   @include posElem();
   background: var(--color-backGround2);
   .section_container {
@@ -25,10 +31,16 @@
     }
   }
 }
-
-
-li {
-  background-color: var(--color-white) !important;
+.imgs {
+  // scroll-snap-align: start;
+  // scroll-snap-stop: always;
+  padding: 14px;
+  
+  height: 209px;
   @include posElem();
+  
   border-radius: 20px !important;
+  background-color: var(--color-white);
+  
 }
+

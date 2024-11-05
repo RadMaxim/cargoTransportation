@@ -8,6 +8,7 @@ import Section5 from "./Section5/Section5";
 import Section6 from "./Section6/Section6";
 import store from "../../../store/store";
 import Layout from "../../../Layouts/Layout";
+import Section7 from "./Section7/Section7";
 
 const MainPage = () => {
   return (
@@ -20,6 +21,7 @@ const MainPage = () => {
           <Section4 />
           <Section5 />
           <Section6 />
+          <Section7/>
           <section className={classMainPage.section}></section>
           <section className={classMainPage.section}></section>
           <section className={classMainPage.section}></section>

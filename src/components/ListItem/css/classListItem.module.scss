@@ -1,0 +1,25 @@
+@mixin posElem($gap){
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    gap: $gap
+
+}
+.list{
+   @include posElem(0);
+   li{
+    div{
+        @include posElem(0);
+    }
+    @include posElem(12px);
+    flex-direction: column;
+   }
+}
+.col{
+
+    flex-direction: column;
+}
+.row{
+    flex-direction: row !important;
+    align-items: start;
+}

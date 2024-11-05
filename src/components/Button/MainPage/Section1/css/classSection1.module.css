@@ -27,7 +27,6 @@
 }
 .section .section_container .section1 {
   grid-area: section1;
-  border: 1px solid rgb(0, 255, 234);
   padding-top: 0px;
   display: grid;
   width: 100%;
@@ -36,7 +35,6 @@
 }
 .section .section_container .section2 {
   grid-area: section2;
-  border: 1px solid rgb(0, 255, 234);
   padding-top: 24px;
   display: grid;
   width: 100%;
@@ -45,7 +43,6 @@
 }
 .section .section_container .section3 {
   grid-area: section3;
-  border: 1px solid rgb(0, 255, 234);
   padding-top: 20px;
   display: grid;
   width: 100%;
@@ -54,7 +51,6 @@
 }
 .section .section_container .section4 {
   grid-area: section4;
-  border: 1px solid rgb(0, 255, 234);
   padding-top: 20px;
   display: grid;
   width: 100%;
@@ -63,7 +59,6 @@
 }
 .section .section_container .section5 {
   grid-area: section5;
-  border: 1px solid rgb(0, 255, 234);
   padding-top: 33px;
   display: grid;
   width: 100%;
@@ -72,7 +67,6 @@
 }
 .section .section_container .section6 {
   grid-area: section6;
-  border: 1px solid rgb(0, 255, 234);
   padding-top: 46px;
   display: grid;
   width: 100%;

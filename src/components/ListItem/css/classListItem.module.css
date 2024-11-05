@@ -1,0 +1,28 @@
+.list {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.list li {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  flex-direction: column;
+}
+.list li div {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.row {
+  flex-direction: row !important;
+  align-items: start;
+}/*# sourceMappingURL=classListItem.module.css.map */

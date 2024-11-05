@@ -75,7 +75,7 @@ const Gallary:React.FC<Gallary> = ({ arr, arrS5, width, height})=>{
           ))}
         </Carousel>}
        {
-       arrS5&&<Carousel itemClass={classGallary.item} partialVisbile={false} ref={carouselRef} arrows={false} responsive={responsive}>
+       arrS5&&<Carousel className={classGallary.items} itemClass={classGallary.item} partialVisbile={false} ref={carouselRef} arrows={false} responsive={responsive}>
        {arrS5.map((elem) => (
             <div className={classGallary.imgs} key={elem.id}>
               <IMGLoadingLazy height={168} width={100} src={elem.userImageURL}/>

@@ -13,7 +13,6 @@
     @for $i from 1 to 7 {
       .section#{$i} {
         grid-area: section#{$i};
-        border: 1px solid rgb(0, 255, 234);
         padding-top: nth($allGapRow, $i);
         @include sizeContainerGrid();
         justify-items: center;

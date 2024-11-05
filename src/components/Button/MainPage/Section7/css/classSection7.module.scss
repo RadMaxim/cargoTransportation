@@ -1,3 +1,4 @@
+@import "./../../css/classMainPage.module.scss";
 @function getW() {
   @return calc(100vw - 32px);
 }
@@ -7,6 +8,42 @@
   align-items: center;
   background: var(--color-white);
   .section_container {
-    width: getW();
+    $allGapRow: (30px, 9px, 20px,10px, 15px, 30px);
+
+    @include sectionCpntainer();
+    grid-template-rows: 63px 29px 70px 60px 45px 261px;
+    grid-template-areas: "section1" "section2" "section3" "section4" "section5" "section6";
+    @for $i from 1 to 7{
+      .section#{$i}{
+        grid-area: section#{$i};
+        // background-color: red;
+        @include posElem();
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        gap: 10px;
+        padding-top: nth($allGapRow, $i);
+        section{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  
+}
+
+.section3 {
+  div {
+    width: 100%;
+    height: 90%;
+    input {
+      width: 100%;
+      height: 100%;
+      outline: none;
+      border: none;
+      font-size: 20px;
+      background-color: var(--color-backGround2);
+    }
   }
 }

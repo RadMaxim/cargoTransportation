@@ -7,7 +7,7 @@ export interface TextProps extends PropsWithChildren {
 }
 const Text: React.FC<TextProps> = ({ children, mode }) => {
   const prop = {
-    color:mode==1?"p116":""
+    color:mode==1?"p116":mode==2?"p213":mode==3?"p316":""
   }
   return (
     <section className={classText.section}>
