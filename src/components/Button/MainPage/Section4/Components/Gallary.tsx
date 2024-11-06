@@ -4,6 +4,7 @@ import React, { useRef, useState } from 'react';
 import IMGLoadingLazy from '../../../../IMG/IMGLazy';
 import Button from '../../../Button';
 import { Video } from '../../Section5/Section5';
+import ReactPlayer from 'react-player';
 export interface ItemGallary{
     src:string
 }
@@ -78,7 +79,8 @@ const Gallary:React.FC<Gallary> = ({ arr, arrS5, width, height})=>{
        arrS5&&<Carousel className={classGallary.items} itemClass={classGallary.item} partialVisbile={false} ref={carouselRef} arrows={false} responsive={responsive}>
        {arrS5.map((elem) => (
             <div className={classGallary.imgs} key={elem.id}>
-              <IMGLoadingLazy height={168} width={100} src={elem.userImageURL}/>
+              <ReactPlayer playIcon={<IMGLoadingLazy height={215} width={253} src={elem.videos?.medium?.thumbnail}/>
+} width={254} height={215} url={elem.videos?.small?.url} playing light/>
             </div>
           ))}
        </Carousel>

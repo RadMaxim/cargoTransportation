@@ -9,7 +9,6 @@ export interface IMGLoadingLazy extends PropsWithChildren{
 const IMGLoadingLazy: React.FC<IMGLoadingLazy> = memo(({ src, width, height }) => {
   
   const { ref, inView } = useInViewImage();
-  console.log(src);
   
   return (
     <div ref={ref} className={classIMGLoadingLazy.main}>

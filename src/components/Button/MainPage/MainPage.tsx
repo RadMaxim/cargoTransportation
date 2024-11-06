@@ -22,7 +22,11 @@ const MainPage = () => {
           <Section5 />
           <Section6 />
           <Section7/>
-          <section className={classMainPage.section}></section>
+          <section className={classMainPage.section}>
+
+        
+            
+          </section>
           <section className={classMainPage.section}></section>
           <section className={classMainPage.section}></section>
           <section className={classMainPage.section}></section>

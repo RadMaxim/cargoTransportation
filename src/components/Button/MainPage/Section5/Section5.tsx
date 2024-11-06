@@ -23,18 +23,21 @@ export interface Video {
       width?: number;
       height?: number;
       size?: number;
+      thumbnail?:string;
     };
     medium?: {
       url?: string;
       width?: number;
       height?: number;
       size?: number;
+      thumbnail?:string;
     };
     small?: {
       url?: string;
       width?: number;
       height?: number;
       size?: number;
+      thumbnail?:string;
     };
     tiny?: {
       url?: string;

@@ -16,8 +16,6 @@
 
 .img {
   border-radius: 20px;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 @keyframes skeleton {
