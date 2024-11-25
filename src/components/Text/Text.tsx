@@ -1,18 +1,19 @@
-import React, { PropsWithChildren } from "react";
+import { memo, ReactNode } from "react";
 import classText from './css/classText.module.css'
-export interface TextProps extends PropsWithChildren {
-  size?: string; // Добавьте свойство size
-  mode?: number; // Добавьте свойство color
-  // Можно добавить другие свойства по мере необходимости
-}
-const Text: React.FC<TextProps> = ({ children, mode }) => {
-  const prop = {
-    color:mode==1?"p116":mode==2?"p213":mode==3?"p316":""
+const getTextClass = (mode: number): string => {
+  switch (mode) {
+    case 1: return classText.p116;
+    case 2: return classText.p213;
+    case 3: return classText.p316;
+    default: return ''; 
   }
+};
+const Text = memo(({ children, mode }:{children:ReactNode, mode:number}) => {
+  const textClass = getTextClass(mode)
   return (
     <section className={classText.section}>
-      <p className={classText[prop.color]}>{children}</p>
+      <p className={textClass}>{children}</p>
     </section>
   );
-};
+});
 export default Text;
