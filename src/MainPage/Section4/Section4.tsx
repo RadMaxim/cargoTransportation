@@ -1,10 +1,11 @@
 import classSection4 from "./css/classSection4.module.css";
 import "react-multi-carousel/lib/styles.css";
-import img1 from "./../../../../../public/galary/m1.jfif";
-import img2 from "./../../../../../public/galary/m2.jfif";
-import img3 from "./../../../../../public/galary/m3.jfif";
-import img4 from "./../../../../../public/galary/m4.jfif";
-import Heading from "../../../heading/Heading";
+
+import img1 from "./../../../public/galary/m1.jfif";
+import img2 from "./../../../public/galary/m2.jfif";
+import img3 from "./../../../public/galary/m3.jfif";
+import img4 from "./../../../public/galary/m4.jfif";
+import Heading from "../../components/heading/Heading";
 import Gallary from "./Components/Gallary";
 
 const arrayImg = [{ src: img1 }, { src: img2 }, { src: img3 }, { src: img4 }];

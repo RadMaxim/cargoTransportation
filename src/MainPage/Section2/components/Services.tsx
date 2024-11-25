@@ -1,7 +1,7 @@
 import React from "react";
-import Button from "../../../Button";
+import Button from "../../../components/Button/Button";
 import classServices from "./css/classServices.module.css";
-import Text from "../../../../Text/Text";
+import Text from "../../../components/Text/Text";
 export interface Services {
   text: string;
   price: string;

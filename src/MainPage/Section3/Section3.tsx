@@ -2,8 +2,9 @@ import classSection3 from "./css/classSection3.module.css";
 
 import Choice from "./components/Choice/Choice";
 import Forms from "./components/Forms/Forms";
-import Text from "../../../Text/Text";
-import Heading from "../../../heading/Heading";
+
+import Text from "../../components/Text/Text";
+import Heading from "../../components/heading/Heading";
 const section3Choice = [{
   textLabel:"Грузчики",
   id:"porter"

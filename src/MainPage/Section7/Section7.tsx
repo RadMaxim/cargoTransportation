@@ -1,11 +1,11 @@
 import { useForm } from "react-hook-form";
-import Heading from "../../../heading/Heading";
-import IMGLoadingLazy from "../../../IMG/IMGLazy";
-import Text from "../../../Text/Text";
+import Heading from "../../components/heading/Heading";
+import IMGLoadingLazy from "../../components/IMG/IMGLazy";
+import Text from "../../components/Text/Text";
 import DifferentInputs from "../Section3/components/DifferentInputs";
 import classSection7 from "./css/classSection7.module.css";
 import img1 from "./img/IMG_3107 1.png"
-import Button from "../../Button";
+import Button from "../../components/Button/Button";
 const Section7 = () => {
   const { register } = useForm({
     mode: "onSubmit",

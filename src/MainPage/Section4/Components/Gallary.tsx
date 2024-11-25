@@ -1,8 +1,8 @@
 import Carousel from 'react-multi-carousel';
 import classGallary from './css/classGallary.module.css'
 import React, { useRef, useState } from 'react';
-import IMGLoadingLazy from '../../../../IMG/IMGLazy';
-import Button from '../../../Button';
+import IMGLoadingLazy from '../../../components/IMG/IMGLazy';
+import Button from '../../../components/Button/Button';
 import { Video } from '../../Section5/Section5';
 import ReactPlayer from 'react-player';
 export interface ItemGallary{

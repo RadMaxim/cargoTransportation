@@ -17,7 +17,7 @@ export interface ListItem{
 const ListItem:React.FC<ListItem> = ({arrImg,dir, back,mode, wElem, hElem})=>{
 
     return (
-    <ul className={`${classListItem.list}  ${classListItem[dir]}`}>{arrImg.map((elem)=>(<Item w={wElem} h={hElem} mode={mode}  back={back} {...elem}/>))}</ul>
+    <ul className={`${classListItem.list}  ${classListItem[dir]}`}>{arrImg.map((elem)=>(<Item w={wElem} key={elem.img} h={hElem} mode={mode}  back={back} {...elem}/>))}</ul>
    
     )
 }

@@ -1,6 +1,6 @@
-import Heading from "../../../heading/Heading";
-import ListItem from "../../../ListItem/ListItem";
-import Text from "../../../Text/Text";
+import Heading from "../../components/heading/Heading";
+import ListItem from "../../components/ListItem/ListItem";
+import Text from "../../components/Text/Text";
 import classSection6 from "./css/classSection6.module.css";
 import img1 from "./img/Group (1).png"
 import img2 from "./img/Layer_1 (3).png"

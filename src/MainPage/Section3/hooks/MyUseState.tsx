@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Form } from "../../../../../../AllInterface/Interface";
+import { Form } from "../../../../AllInterface/Interface";
 
 const ChangeData = ({
   data,

@@ -1,6 +1,6 @@
-import Heading from "../../../heading/Heading";
+import Heading from "../../components/heading/Heading";
 
-import Button from "../../Button";
+import Button from "../../components/Button/Button";
 import Services from "./components/Services";
 import classSection2 from "./css/classSection2.module.css";
 const section = [

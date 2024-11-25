@@ -1,28 +1,15 @@
-import Heading from "../../../heading/Heading";
-import IMGLoadingLazy from "../../../IMG/IMGLazy";
-import Text from "../../../Text/Text";
-import Button from "../../Button";
+import Heading from "../../components/heading/Heading";
+import IMGLoadingLazy from "../../components/IMG/IMGLazy";
+import Text from "../../components/Text/Text";
+import Button from "../../components/Button/Button";
 import classSection1 from "./css/classSection1.module.css";
-import img from "./../../../../../public/img/section1.png"
-import ListItem from "../../../ListItem/ListItem";
-import img1 from './img/Layer_1 (1).png'
-import img2 from './img/Layer_1.png'
-import img3 from './img/Layer_1 (2).png'
-const Section1 = () => {
-  const arrItem = [
-    {
-      img:img1,
-      desc:"Переносим грузы от 100 кг до 50 тонн"
-    },
-    {
-      img:img2,
-      desc:"Используем специальное оборудование"
-    },
-    {
-      img:img3,
-      desc:"Предоставляем спецтехнику"
-    }
-  ]
+import img from "./../../../public/img/section1.png"
+import ListItem from "../../components/ListItem/ListItem";
+import arrItem from "./storeImg/imgs";
+import { memo } from "react";
+
+const Section1 = memo(() => {
+  
   return (
     <section className={classSection1.section}>
       <div className={classSection1.section_container}>
@@ -54,5 +41,5 @@ const Section1 = () => {
       </div>
     </section>
   );
-};
+});
 export default Section1;

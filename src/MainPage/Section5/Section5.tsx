@@ -1,52 +1,9 @@
-import { useGetVideosQuery } from "../../../../store/api/api";
-import Heading from "../../../heading/Heading";
-import Text from "../../../Text/Text";
+import { useGetVideosQuery } from "../../store/api/api";
+import Heading from "../../components/heading/Heading";
+import Text from "../../components/Text/Text";
 import Choice from "../Section3/components/Choice/Choice";
 import Gallary from "../Section4/Components/Gallary";
 import classSection5 from "./css/classSection5.module.css";
-export interface Video {
-  id?: number;
-  pageURL?: string;
-  type?: string;
-  tags?: string;
-  duration?: number;
-  views?: number;
-  downloads?: number;
-  likes?: number;
-  comments?: number;
-  user?: string;
-  user_id?: number;
-  userImageURL?: string;
-  videos?: {
-    large?: {
-      url?: string;
-      width?: number;
-      height?: number;
-      size?: number;
-      thumbnail?:string;
-    };
-    medium?: {
-      url?: string;
-      width?: number;
-      height?: number;
-      size?: number;
-      thumbnail?:string;
-    };
-    small?: {
-      url?: string;
-      width?: number;
-      height?: number;
-      size?: number;
-      thumbnail?:string;
-    };
-    tiny?: {
-      url?: string;
-      width?: number;
-      height?: number;
-      size?: number;
-    };
-  };
-}
 
 
 const section5Choice = [{
@@ -72,7 +29,6 @@ const section5Choice = [{
 ]
 const Section5 = () => {
   const {data} = useGetVideosQuery({})
- console.log(data);
  
  
   return (

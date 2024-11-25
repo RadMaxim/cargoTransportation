@@ -1,5 +1,5 @@
 import { memo } from "react";
-import { DifInput } from "../../../../../../AllInterface/Interface";
+import { DifInput } from "../../../../AllInterface/Interface";
 
 const DifferentInputs = memo(({ pl, type, register, names }: DifInput) => (
   <div>

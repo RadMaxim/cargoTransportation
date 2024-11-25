@@ -1,5 +1,5 @@
 import { memo } from "react";
-import { DiffLabel } from "../../../../../../AllInterface/Interface";
+import { DiffLabel } from "../../../../AllInterface/Interface";
 
 const DiffLabelRadio = memo(({ textLabel, id, name }: DiffLabel) => (
   <>
